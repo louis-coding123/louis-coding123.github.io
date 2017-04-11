@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="customcss.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<script src="rockpaperscissors.js"></script>
+</head>
+    <body>
+
+<!-- MAIN PAGE -->
+<div data-role="page" id="gameStation" data-theme="b">
+	<div data-role="header">
+		<h1>Game Room</h1>	
+	</div>
+	
+	<div class="img-div">
+		<img src="http://24.media.tumblr.com/tumblr_lzq7rcG7An1r9kqc0o1_400.gif">
+	</div>
+
+	<div role="main" class="ui-content">
+		<p>Welcome To the Game Station!!!</p>
+		<p>Choose Your Game</p>
+		<a href="#rockPaperScissors" data-role="button" data-transition="slideup">Rock, Paper, Scissors</a>
+		<a href="#TTT" data-role="button" data-transition="slide" >Tic, Tac, Toe</a>
+		<a href="#Instructions" data-role="button" data-mini="true">Instructions</a>
+	</div>
+
+	<div data-role="footer">
+		<h4>BSD Games 2017</h4>
+	</div>
+</div><!-- CLOSING TAG FOR MAIN PAGE -->
+
+<!-- ROCK PAPER SCISSORS PAGE -->
+<div data-role="page" data-theme="b" id="rockPaperScissors">
+
+	<div data-role="header" class="game1">
+		<h1>Rock</h1>
+		<h2>Paper</h2>
+		<h3>Scissors</h3>
+	</div>
+
+	<div role="main" class="ui-content">
+		<!-- <div class="scoreboard"> -->
+			<div id="playerboard">
+				<p> Player Score: 0</p>
+			</div>
+
+			<div id="compboard">
+				<p>0: Computer Score </p>
+			</div>
+		<!-- </div> -->
+	 
+		<p>Click the Images to Make Your Choice Between Rock, Paper and Scissors</p>
+	
+	
+		<div class="rock">
+			<img src="https://cdn.shutterstock.com/shutterstock/videos/8581099/thumb/1.jpg">
+			<img src="https://previews.123rf.com/images/stillfx/stillfx1203/stillfx120300216/12931152-Newspaper-clippings-on-black-background-Stock-Photo-newspaper-torn-paper.jpg">
+			<img src="https://cdn.shutterstock.com/shutterstock/videos/7199782/thumb/3.jpg?i10c=img.resize(height:160)">
+		</div>
+		
+		<a href="javascript:history.go(0)" data-role="button">Reset the Score</a>
+		<a href="#gameStation" data-role="button" data-transition="slidedown">Back To Main Screen</a>
+	</div>
+
+	<div data-role="footer">
+		<h4>BSD Games 2017</h4>
+	</div>
+</div><!-- CLOSING TAG FOR SECOND PAGE-->
+  
+
+  <!--TIC TAC TOE PAGE-->
+<div data-role="page" data-theme="b" id="TTT">
+	
+	<div data-role="header">
+		<h1>Tic Tac </h1>
+		<h1>Toe</h1>
+	</div>
+
+	<p> Click on a Free Square to Play 		
+	<div role="main" class="ui-content">
+		<a href="#gameStation" data-role="button" data-transition="slide" >Back To Main Screen</a>
+
+	</div>
+
+	<div data-role="footer">
+		<h4>BSD Games 2017</h4>
+	</div>
+</div>
+<!-- END OF TIC TAC TOE PAGE -->
+
+<!-- INSTRUCTIONS PAGE -->
+<div data-role="page" data-theme="b" id="Instructions">
+	
+	<div data-role="header">
+		<h1>Instructions</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+		<p>Rock, Paper, Scissors :  </p>
+		<p class="InstrucPara">You have to make your Choice between Rock, Paper and Scissors. </p1>
+		<p class="InstrucPara">The Computer will make their Choice. Then you will be informed if you Won or if you Lost.</p2>
+		<a href="#rockPaperScissors" data-role="button" data-transition="slideup">Press To Go to Rock Paper Scissors</a>
+		<p> Tic Tac Toe : 
+		<p class="InstrucPara">
+		<a href="#TTT" data-role="button" data-transition="slide" >Press To Go to Tic, Tac, Toe</a>
+	</div>
+	
+	<a href="#gameStation" data-role="button">Back To Main Screen</a>
+	
+	<div data-role="footer">
+		<h4>BSD Games 2017</h4>
+	</div>
+</div> <!-- CLOSING TAG FOR INSTRUCTIONS -->
+
+
+</body>
+</html>
