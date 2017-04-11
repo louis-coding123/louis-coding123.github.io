@@ -5,6 +5,11 @@ h1 {
 	text-align: left;
 
 }
+
+.ui-header .ui-title {
+
+	font-size: 15px !important;
+}
 .scoreboard{
 	color: white;
 	font-family: "Press Start 2P";
@@ -17,7 +22,7 @@ h1 {
 
 #playerboard > p {
 	font-size: 14px;
-}ssss
+}
 
 #compboard {
 width: 75%;
