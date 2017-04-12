@@ -34,6 +34,13 @@
 	</div>
 </div><!-- CLOSING TAG FOR MAIN PAGE -->
 
+
+
+
+
+
+
+
 <!-- ROCK PAPER SCISSORS PAGE -->
 <div data-role="page" data-theme="b" id="rockPaperScissors">
 
@@ -45,12 +52,12 @@
 
 	<div role="main" class="ui-content">
 		<!-- <div class="scoreboard"> -->
-			<div id="playerboard">
-				<p> Player Score: 0</p>
+			<div class="Scoreboard" id="playerboard">
+				<p> Player Score:<span id="playerScore">0</span> 	 </p>
 			</div>
 
-			<div id="compboard">
-				<p>0: Computer Score </p>
+			<div class="Scoreboard" id="compboard">
+				<p><span class="Scoreboard">0</span>: Computer Score </p>
 			</div>
 		<!-- </div> -->
 	 
@@ -58,12 +65,12 @@
 	
 	
 		<div class="rock">
-			<img src="https://cdn.shutterstock.com/shutterstock/videos/8581099/thumb/1.jpg">
-			<img src="https://previews.123rf.com/images/stillfx/stillfx1203/stillfx120300216/12931152-Newspaper-clippings-on-black-background-Stock-Photo-newspaper-torn-paper.jpg">
-			<img src="https://cdn.shutterstock.com/shutterstock/videos/7199782/thumb/3.jpg?i10c=img.resize(height:160)">
+			<img  id="Rock" src="https://cdn.shutterstock.com/shutterstock/videos/8581099/thumb/1.jpg">
+			<img id="Paper" src="https://previews.123rf.com/images/stillfx/stillfx1203/stillfx120300216/12931152-Newspaper-clippings-on-black-background-Stock-Photo-newspaper-torn-paper.jpg">
+			<img id="Scissors" src="https://cdn.shutterstock.com/shutterstock/videos/7199782/thumb/3.jpg?i10c=img.resize(height:160)">
 		</div>
 		
-		<a href="javascript:history.go(0)" data-role="button">Reset the Score</a>
+		<a id="reset" data-role="button">Reset the Score</a>
 		<a href="#gameStation" data-role="button" data-transition="slidedown">Back To Main Screen</a>
 	</div>
 
@@ -74,6 +81,14 @@
   
 
   <!--TIC TAC TOE PAGE-->
+
+
+
+
+
+
+
+
 <div data-role="page" data-theme="b" id="TTT">
 	
 	<div data-role="header">
