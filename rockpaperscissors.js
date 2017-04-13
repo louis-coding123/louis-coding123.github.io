@@ -58,47 +58,47 @@ reset.addEventListener('click',function(){
   result.innerHTML = '';
 });
 
-// paper.addEventListener('click',function(){
-//  	var computerChoice = getCompchoice();
+paper.addEventListener('click',function(){
+ 	var computerChoice = getCompchoice();
 
-// if(computerChoice === "scissors"){
-// score=score-1;
-// points.innerHTML=score;
-// result.innerHTML = 'You Picked Paper. Computer Picked Scissors. You Lose!!';
-// }
+if(computerChoice === "scissors"){
+  compScore=compScore + 1;
+compPoints.innerHTML=compScore;
+result.innerHTML = 'You Picked Paper. Computer Picked Scissors. You Lose!!';
+}
 
-// else if(computerChoice === "Paper") {
+else if(computerChoice === "Paper") {
 
-//     result.innerHTML = 'You Picked Paper. Computer Picked Paper. Its A Tie!!'
-// }
+    result.innerHTML = 'You Picked Paper. Computer Picked Paper. Its A Tie!!'
+}
 
-// else {
-//      score=score+1;
-//  points.innerHTML=score;
-//     result.innerHTML = 'You Picked Paper. Computer Picked Rock. You Win!!'
-// }
-// });
+else {
+     score=score+1;
+ points.innerHTML=score;
+    result.innerHTML = 'You Picked Paper. Computer Picked Rock. You Win!!'
+}
+});
 
-// scissors.addEventListener('click',function(){
-//   	var computerChoice = getCompchoice();
+scissors.addEventListener('click',function(){
+  	var computerChoice = getCompchoice();
 
-// if(computerChoice === "scissors"){
+if(computerChoice === "scissors"){
 
-// result.innerHTML = 'You Picked Scissors. Computer Picked Scissors. Its A Tie!!';
-// }
+result.innerHTML = 'You Picked Scissors. Computer Picked Scissors. Its A Tie!!';
+}
 
-// else if(computerChoice === "Paper") {
-//  score=score+1;
-//  points.innerHTML=score;
-//     result.innerHTML = 'You Picked Scissors. Computer Picked Paper. You Win!!'
-// }
+else if(computerChoice === "Paper") {
+ score=score+1;
+ points.innerHTML=score;
+    result.innerHTML = 'You Picked Scissors. Computer Picked Paper. You Win!!'
+}
 
-// else {
-//     result.innerHTML = 'You Picked Scissors. Computer Picked Rock. You Lose!!'
-//      score=score-1;
-//  points.innerHTML=score;
-// }
-// });
+else {
+    result.innerHTML = 'You Picked Scissors. Computer Picked Rock. You Lose!!'
+  compScore=compScore + 1;
+compPoints.innerHTML=compScore;
+}
+});
 
 
 
