@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Shadows+Into+Light" rel="stylesheet">
 <script src="rockpaperscissors.js"></script>
 </head>
     <body>
@@ -22,10 +22,11 @@
 	</div>
 
 	<div role="main" class="ui-content">
-		<p>Welcome To the Game Station</p>
-		<p>Choose Your Game</p>
+		<h1>Welcome To the Game Station</h1>
+		<h1>Choose Your Game</h1>
+		<a href="#AboutMySelf" data-role="button" data-transition="slideup">A Bit About Myself
 		<a href="#rockPaperScissors" data-role="button" data-transition="slideup">Rock, Paper, Scissors</a>
-		<a href="#TTT" data-role="button" data-transition="slide" >Tic, Tac, Toe</a>
+		
 		<a href="#Instructions" data-role="button" data-mini="true" data-transition="flip">Instructions</a>
 	</div>
 
@@ -80,11 +81,26 @@
 </div><!-- CLOSING TAG FOR SECOND PAGE-->
   
 
-  <!--TIC TAC TOE PAGE-->
+  
 
 
 
+<div data-role="page" data-theme="b" id="AboutMySelf">
+	
+	<div data-role="header">
+		<h1>Some Info About Me</h1>
+	</div>
 
+	<h5>I was born the 13th of November 2003 in London, England, so that makes me 13 years old. I go to the French International School. I built this game page with the help of BSD.</h5>
+	<div role="main" class="ui-content">
+		<a href="#gameStation" data-role="button" data-transition="slide" >Back To Main </a>
+
+	</div>
+
+	<div data-role="footer">
+		<h4>BSD Games 2017</h4>
+	</div>
+</div>
 
 
 
